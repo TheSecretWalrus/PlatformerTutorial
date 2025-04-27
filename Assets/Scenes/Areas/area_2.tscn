@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhdnbuoatxctv"]
+
+[ext_resource type="PackedScene" uid="uid://7yhrdymnodv3" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_y4hc0"]
+[ext_resource type="PackedScene" uid="uid://cwjgkg22w17je" path="res://Assets/Scenes/MovingPlatformLarge.tscn" id="2_fsu62"]
+
+[sub_resource type="Curve2D" id="Curve2D_oqdf5"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 34, 46, 0, 0, 0, 0, 0, -26, 0, 0, 0, 0, -121, -26)
+}
+point_count = 3
+
+[node name="Area 2" instance=ExtResource("1_y4hc0")]
+
+[node name="TileMap" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(-131083, 131072, 2, -196619, 131072, 0, -131084, 65536, 2, -196620, 65536, 0, -131085, 65536, 2, -196621, 65536, 0, -131086, 65536, 2, -196622, 65536, 0, -131087, 65536, 2, -196623, 65536, 0, -131088, 0, 2, -196624, 0, 0, -131090, 131072, 2, -196626, 131072, 0, -131091, 0, 2, -196627, 0, 0, -131093, 131072, 2, -196629, 131072, 0, -131094, 0, 2, -196630, 0, 0)
+
+[node name="MovingPlatformLarge" parent="Moving Platforms" index="0" instance=ExtResource("2_fsu62")]
+position = Vector2(-104, -44)
+curve = SubResource("Curve2D_oqdf5")
+
+[node name="Area Exit" parent="." index="6"]
+position = Vector2(-339, -77)
