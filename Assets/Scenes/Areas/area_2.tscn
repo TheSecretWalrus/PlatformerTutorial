@@ -12,7 +12,10 @@ point_count = 3
 
 [node name="Area 2" instance=ExtResource("1_y4hc0")]
 
-[node name="TileMap" parent="." index="0"]
+[node name="PlayerStartPosition" parent="." index="0"]
+position = Vector2(0, -25)
+
+[node name="TileMap" parent="." index="1"]
 layer_0/tile_data = PackedInt32Array(-131083, 131072, 2, -196619, 131072, 0, -131084, 65536, 2, -196620, 65536, 0, -131085, 65536, 2, -196621, 65536, 0, -131086, 65536, 2, -196622, 65536, 0, -131087, 65536, 2, -196623, 65536, 0, -131088, 0, 2, -196624, 0, 0, -131090, 131072, 2, -196626, 131072, 0, -131091, 0, 2, -196627, 0, 0, -131093, 131072, 2, -196629, 131072, 0, -131094, 0, 2, -196630, 0, 0)
 
 [node name="Area Exit" parent="." index="2"]

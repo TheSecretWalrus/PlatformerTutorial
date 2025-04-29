@@ -103,13 +103,15 @@ _data = {
 radius = 5.0
 height = 14.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 768
 platform_on_leave = 2
 script = ExtResource("1_v3j4g")
+speed = 5.0
+jump_power = 15.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
+zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
 

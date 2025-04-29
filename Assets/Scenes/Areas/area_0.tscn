@@ -2,7 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://7yhrdymnodv3" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_5vd60"]
 
-[node name="AreaTemplate" instance=ExtResource("1_5vd60")]
+[node name="Area0" instance=ExtResource("1_5vd60")]
+
+[node name="PlayerStartPosition" parent="." index="0"]
+position = Vector2(0, -47)
 
 [node name="EnergyCell" parent="Energy Cells" index="0"]
 position = Vector2(26, -10)

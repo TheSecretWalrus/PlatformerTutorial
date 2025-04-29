@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://62qm0di4uva7"]
+
+[ext_resource type="Script" uid="uid://ce740203u55tn" path="res://Assets/Scenes/music_manager.gd" id="1_d81qh"]
+
+[node name="MusicManager" type="Node"]
+script = ExtResource("1_d81qh")
+
+[node name="FmodBankLoader" type="FmodBankLoader" parent="."]
+bank_paths = ["res://FmodBank/Desktop/MUS_MainMenu.bank", "res://FmodBank/Desktop/Master.strings.bank", "res://FmodBank/Desktop/Master.bank"]
+
+[node name="FmodEventEmitter2D" type="FmodEventEmitter2D" parent="."]
+event_name = "event:/MainMenuNew"
+event_guid = "{59d7acb6-7cd7-416e-86ad-b98bf62419f1}"
+autoplay = true
+fmod_parameters/MenuLayer/id = -6045774314663147797
+fmod_parameters/MenuLayer = "Top Menu"
+fmod_parameters/MenuLayer/labels = PackedStringArray("Top Menu", "Sub Menu")
+fmod_parameters/MenuLayer/variant_type = 4
+
+[node name="FmodListener2D" type="FmodListener2D" parent="."]

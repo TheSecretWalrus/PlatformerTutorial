@@ -19,5 +19,5 @@ func close():
 func _on_body_entered(body: Node2D) -> void:
 	
 	if body is PlayerController && is_open:
-		GameManager.next_level()
+		GameManager.next_area()
 		#print("player has entered portal")

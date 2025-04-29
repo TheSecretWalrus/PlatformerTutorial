@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlvs5y7t6t8i4"]
+
+[ext_resource type="PackedScene" uid="uid://cuch8m1jk62uf" path="res://Assets/Scenes/Player.tscn" id="1_0ti3t"]
+[ext_resource type="PackedScene" uid="uid://62qm0di4uva7" path="res://Assets/Scenes/music_manager.tscn" id="2_6k5g7"]
+
+[node name="Gameplay" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_0ti3t")]
+
+[node name="Area" type="Node2D" parent="." groups=["area_container"]]
+
+[node name="MusicManager" parent="." instance=ExtResource("2_6k5g7")]
+
+[connection signal="jumped" from="Player" to="MusicManager" method="_on_player_jumped"]

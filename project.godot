@@ -29,7 +29,7 @@ DSP/dsp_buffer_count=4
 [application]
 
 config/name="Platformer Tutorial"
-run/main_scene="res://Assets/Scenes/Area Functionality/area_template.tscn"
+run/main_scene="uid://dlvs5y7t6t8i4"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -44,6 +44,8 @@ enabled=PackedStringArray("res://addons/fmod/plugin.cfg")
 
 [global_group]
 
+area_container=""
+player=""
 area_exits=""
 
 [input]

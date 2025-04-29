@@ -21,6 +21,7 @@ func _input(event: InputEvent) -> void:
 	#if Input.is_action_just_pressed("jump") and is_on_floor():
 	if event.is_action_pressed("jump") and is_on_floor():
 		velocity.y = jump_power * jump_multiplier#JUMP_VELOCITY
+		print("should be emitting jump signal: ")
 		jumped.emit()
 	if event.is_action_pressed("move_down"):
 		#handles falling through one way platforms
@@ -42,3 +43,6 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, speed*speed_multiplier)
 
 	move_and_slide()
+	
+func teleport_to_location(new_location):
+	position = new_location
