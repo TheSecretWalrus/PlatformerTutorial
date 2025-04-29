@@ -47,6 +47,7 @@ enabled=PackedStringArray("res://addons/fmod/plugin.cfg")
 area_container=""
 player=""
 area_exits=""
+hud=""
 
 [input]
 

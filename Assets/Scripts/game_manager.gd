@@ -3,6 +3,7 @@ extends Node
 var starting_area = 0
 var area_container : Node2D
 var player : PlayerController
+var hud : HUD
 
 var current_area = 0
 var area_path = "res://Assets/Scenes/Areas/"
@@ -10,9 +11,11 @@ var area_path = "res://Assets/Scenes/Areas/"
 var energy_cells = 0
 
 func _ready():
+	hud = get_tree().get_first_node_in_group("hud")
 	area_container = get_tree().get_first_node_in_group("area_container")
 	player = get_tree().get_first_node_in_group("player")
-	load_area(starting_area)
+	#load_area(starting_area)
+	next_area()
 	#reset_energy_cells()
 
 func next_area():
@@ -46,11 +49,15 @@ func load_area(area_number):
 	
 func add_energy_cell():
 	energy_cells += 1
+	hud.update_energy_cell_label(energy_cells)
 	if energy_cells >= 4:
 		#open portal
 		var portal = get_tree().get_first_node_in_group("area_exits") as AreaExit
 		portal.open()
+		hud.portal_opened()
 		pass
 	
 func reset_energy_cells():
 	energy_cells = 0
+	hud.update_energy_cell_label(energy_cells)
+	hud.portal_closed()
