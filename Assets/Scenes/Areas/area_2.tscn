@@ -15,9 +15,21 @@ point_count = 3
 [node name="TileMap" parent="." index="0"]
 layer_0/tile_data = PackedInt32Array(-131083, 131072, 2, -196619, 131072, 0, -131084, 65536, 2, -196620, 65536, 0, -131085, 65536, 2, -196621, 65536, 0, -131086, 65536, 2, -196622, 65536, 0, -131087, 65536, 2, -196623, 65536, 0, -131088, 0, 2, -196624, 0, 0, -131090, 131072, 2, -196626, 131072, 0, -131091, 0, 2, -196627, 0, 0, -131093, 131072, 2, -196629, 131072, 0, -131094, 0, 2, -196630, 0, 0)
 
+[node name="Area Exit" parent="." index="2"]
+position = Vector2(-339, -77)
+
 [node name="MovingPlatformLarge" parent="Moving Platforms" index="0" instance=ExtResource("2_fsu62")]
 position = Vector2(-104, -44)
 curve = SubResource("Curve2D_oqdf5")
 
-[node name="Area Exit" parent="." index="6"]
-position = Vector2(-339, -77)
+[node name="EnergyCell" parent="Energy Cells" index="0"]
+position = Vector2(-35, -9)
+
+[node name="EnergyCell2" parent="Energy Cells" index="1"]
+position = Vector2(-237, -73)
+
+[node name="EnergyCell3" parent="Energy Cells" index="2"]
+position = Vector2(-69, -13)
+
+[node name="EnergyCell4" parent="Energy Cells" index="3"]
+position = Vector2(43, -10)

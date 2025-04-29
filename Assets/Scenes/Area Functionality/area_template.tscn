@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://7yhrdymnodv3"]
+[gd_scene load_steps=8 format=3 uid="uid://7yhrdymnodv3"]
 
 [ext_resource type="Script" uid="uid://cta4xhbfs36kr" path="res://Assets/Scripts/area_1.gd" id="1_2pegy"]
 [ext_resource type="Texture2D" uid="uid://fc8adctiae4i" path="res://Assets/Sprites/tiles_1.png" id="2_dp7b8"]
 [ext_resource type="PackedScene" uid="uid://cuch8m1jk62uf" path="res://Assets/Scenes/Player.tscn" id="3_kfrer"]
 [ext_resource type="PackedScene" uid="uid://bx66ua7vcqldh" path="res://Assets/Scenes/Area Functionality/area_exit.tscn" id="4_dp7b8"]
+[ext_resource type="PackedScene" uid="uid://bcx3fcpaquisb" path="res://Assets/Scenes/energy_cell.tscn" id="5_kfrer"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hssji"]
 texture = ExtResource("2_dp7b8")
@@ -346,6 +347,14 @@ position = Vector2(-35, -12)
 [node name="Moving Platforms" type="Node2D" parent="."]
 
 [node name="Energy Cells" type="Node2D" parent="."]
+
+[node name="EnergyCell" parent="Energy Cells" instance=ExtResource("5_kfrer")]
+
+[node name="EnergyCell2" parent="Energy Cells" instance=ExtResource("5_kfrer")]
+
+[node name="EnergyCell3" parent="Energy Cells" instance=ExtResource("5_kfrer")]
+
+[node name="EnergyCell4" parent="Energy Cells" groups=["area_exits"] instance=ExtResource("5_kfrer")]
 
 [node name="FmodBankLoader" type="FmodBankLoader" parent="."]
 bank_paths = ["res://FmodBank/Desktop/MUS_MainMenu.bank", "res://FmodBank/Desktop/Master.strings.bank", "res://FmodBank/Desktop/Master.bank"]

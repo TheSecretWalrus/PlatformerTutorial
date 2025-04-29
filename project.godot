@@ -42,6 +42,10 @@ GameManager="*res://Assets/Scripts/game_manager.gd"
 
 enabled=PackedStringArray("res://addons/fmod/plugin.cfg")
 
+[global_group]
+
+area_exits=""
+
 [input]
 
 jump={

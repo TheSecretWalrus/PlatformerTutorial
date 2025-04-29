@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://dekcgtohvkmmw"]
+[gd_scene load_steps=2 format=3 uid="uid://dekcgtohvkmmw"]
 
 [ext_resource type="PackedScene" uid="uid://7yhrdymnodv3" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_5vd60"]
-[ext_resource type="PackedScene" uid="uid://bcx3fcpaquisb" path="res://Assets/Scenes/energy_cell.tscn" id="2_abjyw"]
 
 [node name="AreaTemplate" instance=ExtResource("1_5vd60")]
 
-[node name="Energy Cell" parent="Energy Cells" index="0" instance=ExtResource("2_abjyw")]
-position = Vector2(23, -8)
+[node name="EnergyCell" parent="Energy Cells" index="0"]
+position = Vector2(26, -10)
 
-[node name="Energy Cell2" parent="Energy Cells" index="1" instance=ExtResource("2_abjyw")]
-position = Vector2(41, -8)
+[node name="EnergyCell2" parent="Energy Cells" index="1"]
+position = Vector2(18, -34)
+
+[node name="EnergyCell3" parent="Energy Cells" index="2"]
+position = Vector2(-1, -32)
+
+[node name="EnergyCell4" parent="Energy Cells" index="3"]
+position = Vector2(-15, -9)

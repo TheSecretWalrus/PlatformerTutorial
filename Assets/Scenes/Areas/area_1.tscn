@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4ditvky5wadd"]
+[gd_scene load_steps=2 format=3 uid="uid://b4ditvky5wadd"]
 
 [ext_resource type="PackedScene" uid="uid://7yhrdymnodv3" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_uidp5"]
-[ext_resource type="PackedScene" uid="uid://bcx3fcpaquisb" path="res://Assets/Scenes/energy_cell.tscn" id="2_3uyhe"]
 
 [node name="Area 1" instance=ExtResource("1_uidp5")]
 
@@ -11,8 +10,14 @@ layer_1/tile_data = PackedInt32Array(65534, 65536, 4, 131074, 131072, 6, 65538, 
 [node name="Area Exit" parent="." index="2"]
 position = Vector2(112, -94)
 
-[node name="Energy Cell2" parent="Energy Cells" index="0" instance=ExtResource("2_3uyhe")]
-position = Vector2(46, -90)
+[node name="EnergyCell" parent="Energy Cells" index="0"]
+position = Vector2(52, -89)
 
-[node name="Energy Cell" parent="Energy Cells" index="1" instance=ExtResource("2_3uyhe")]
-position = Vector2(-7, -73)
+[node name="EnergyCell2" parent="Energy Cells" index="1"]
+position = Vector2(25, -42)
+
+[node name="EnergyCell3" parent="Energy Cells" index="2"]
+position = Vector2(-9, -75)
+
+[node name="EnergyCell4" parent="Energy Cells" index="3"]
+position = Vector2(-50, -11)
